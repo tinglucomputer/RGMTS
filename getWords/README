@@ -1,0 +1,2 @@
+getword.py：从原始文件中提取出每个文档的单词并保存到一个单独的文件中
+wordtodocument.py: 统计每个文档中的关键词，最终形成wordlist.txt文件

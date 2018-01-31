@@ -1,0 +1,14 @@
+编译：
+gcc main.c matrix_and_s.c results.c search.c tpds_index.c wrapper_function.c my_index.c DFMRS.c -o encrypt -lm
+
+生成索引初始文件和秘钥：
+python create_index.py -w 4000 -f 4000 -n 0 -d 80
+
+运行查询：
+./encrypt -f 4000 -w 4000 -d 80 -n 0 -t 50 -e 2 -y 10 -m 1
+
+输入：
+scanf("%d %lf %d %d %d", &numbers, &a, &is_show, &test_turn, &magnify); //单词数， a大小， 时候显示结果， 测试次数， 放大倍数
+
+注意：
+因为EDMRS（TPDS 2015)效率低下， 本代码中注释掉了EDMRS相关的代码，如果需要运行可以去掉前面的注释。

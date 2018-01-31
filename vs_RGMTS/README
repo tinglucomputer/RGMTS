@@ -1,0 +1,7 @@
+编译：
+gcc wrapper_function.c matrix_and_s.c Get_Keys.c DFMRS.c my_index.c results.c search.c Server_Init.c Input_Words.c Init_keys.c Trapdoor_Construction.c main.c -o test -lm
+
+运行：
+./test -f 4000 -w 4000 -n 0 -d 80 -t 50 -e 2 -y 10 -m 2
+
+本代码只有EGMRS 和 RGMTS 的测试代码， 不包含EDMRS (TPDS 2015)， 而且每次需要自己手动输入要查询的单词的ID
